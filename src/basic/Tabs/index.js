@@ -205,7 +205,7 @@ const ScrollableTabView = createReactClass({
         keyboardDismissMode="on-drag"
         {...this.props.contentProps}
       >
-        {scenes}
+        {this.props.reverseScene ? scenes.reverse():scenes}
       </ScrollView>
     );
   },
